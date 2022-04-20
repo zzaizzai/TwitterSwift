@@ -18,7 +18,7 @@ struct ContentView: View {
             if showMenu {
                 ZStack {
                     Color(.black)
-                        .opacity(0.25)
+                        .opacity(showMenu ? 0.25 : 0.0)
                 }.onTapGesture {
                     withAnimation(.easeInOut) {
                         showMenu = false
@@ -27,7 +27,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             }
             
-            SideMenuRowView()
+            SideMenuView()
                 .frame(width: 300)
                 .offset(x: showMenu ? 0: -300, y: 0)
                 .background(showMenu ? Color.white : Color.clear)
@@ -46,6 +46,9 @@ struct ContentView: View {
                         .frame(width: 32, height: 32)
                 }
             }
+        }
+        .onAppear {
+            showMenu = false
         }
     }
 }
