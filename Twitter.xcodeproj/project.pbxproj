@@ -37,6 +37,8 @@
 		A6C6446D28142F59000CE875 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A6C6446C28142F59000CE875 /* FirebaseStorage */; };
 		A6C6446F281430BF000CE875 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6446E281430BF000CE875 /* AuthViewModel.swift */; };
 		A6D6213C28145A16005849FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D6213B28145A15005849FE /* GoogleService-Info.plist */; };
+		A6D6213E28146280005849FE /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D6213D28146280005849FE /* ProfilePhotoSelectorView.swift */; };
+		A6D6214128146C7A005849FE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D6214028146C7A005849FE /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		A6C644602814275B000CE875 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		A6C6446E281430BF000CE875 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		A6D6213B28145A15005849FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "Twitter/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A6D6213D28146280005849FE /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		A6D6214028146C7A005849FE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 			children = (
 				A610A4992811A7C000334C2F /* LoginView.swift */,
 				A610A49B2811A7D300334C2F /* RegistrationView.swift */,
+				A6D6213D28146280005849FE /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 		A691C648280A111100E246CE /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				A6D6213F28146C67005849FE /* Utils */,
 				A691C65A280A11AE00E246CE /* Core */,
 				A691C659280A11A800E246CE /* Service */,
 				A691C658280A119F00E246CE /* Model */,
@@ -365,6 +371,14 @@
 			path = Tweets;
 			sourceTree = "<group>";
 		};
+		A6D6213F28146C67005849FE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6D6214028146C7A005849FE /* ImagePicker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,12 +461,14 @@
 			files = (
 				A691C64C280A111100E246CE /* ContentView.swift in Sources */,
 				A63C5BFC280C0BB20003EFD0 /* ExploreView.swift in Sources */,
+				A6D6214128146C7A005849FE /* ImagePicker.swift in Sources */,
 				A691C663280A127A00E246CE /* TweetRowView.swift in Sources */,
 				A63C5BFE280C64830003EFD0 /* TweetFilterViewModel.swift in Sources */,
 				A610A4A02811B0A700334C2F /* CustomInputField.swift in Sources */,
 				A63C5C0A280C6E600003EFD0 /* SideMenuView.swift in Sources */,
 				A63C5BF4280C0AA40003EFD0 /* MessageView.swift in Sources */,
 				A63C5BEB280C091C0003EFD0 /* NotificationView.swift in Sources */,
+				A6D6213E28146280005849FE /* ProfilePhotoSelectorView.swift in Sources */,
 				A63C5C0C280C6E780003EFD0 /* SideMenuViewModel.swift in Sources */,
 				A691C660280A11DF00E246CE /* FeedView.swift in Sources */,
 				A63C5C04280C691D0003EFD0 /* UserRowView.swift in Sources */,
