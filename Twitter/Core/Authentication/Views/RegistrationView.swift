@@ -21,19 +21,29 @@ struct RegistrationView: View {
             
             VStack (spacing: 40) {
                 
-                CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
+                CustomInputField(imageName: "envelope",
+                                 placeholderText: "Email",
+                                 text: $email)
                 
-                CustomInputField(imageName: "person", placeholderText: "Username", text: $username)
+                CustomInputField(imageName: "person",
+                                 placeholderText: "Username",
+                                 text: $username)
                 
-                CustomInputField(imageName: "person", placeholderText: "Full name", text: $fullname)
+                CustomInputField(imageName: "person",
+                                 placeholderText: "Full name",
+                                 text: $fullname)
                 
-                CustomInputField(imageName: "lock", placeholderText: "Password", text: $password)
+                CustomInputField(imageName: "lock",
+                                 placeholderText: "Password",
+                                 isSecureField: true,
+                                 text: $password)
                 
             }
             .padding(32)
             
             Button {
                 
+                viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
                 
             } label: {
                 Text("Sign Up")
@@ -51,8 +61,9 @@ struct RegistrationView: View {
             
             Spacer()
             
-            Button {
-                viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
+            NavigationLink {
+                LoginView()
+                    .navigationBarHidden(true)
             } label: {
                 HStack {
                     Text("Already have an account? ")
@@ -64,6 +75,7 @@ struct RegistrationView: View {
                 }
             }
             .padding(.bottom, 32)
+            .foregroundColor(Color(.systemBlue))
         }
         .ignoresSafeArea()
     }

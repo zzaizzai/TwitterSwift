@@ -31,12 +31,12 @@
 		A691C660280A11DF00E246CE /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691C65F280A11DF00E246CE /* FeedView.swift */; };
 		A691C663280A127A00E246CE /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691C662280A127A00E246CE /* TweetRowView.swift */; };
 		A6C644612814275B000CE875 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C644602814275B000CE875 /* AuthHeaderView.swift */; };
-		A6C6446328142E2D000CE875 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C6446228142E2D000CE875 /* GoogleService-Info.plist */; };
 		A6C6446728142F59000CE875 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A6C6446628142F59000CE875 /* FirebaseAuth */; };
 		A6C6446928142F59000CE875 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A6C6446828142F59000CE875 /* FirebaseFirestore */; };
 		A6C6446B28142F59000CE875 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A6C6446A28142F59000CE875 /* FirebaseFirestoreSwift-Beta */; };
 		A6C6446D28142F59000CE875 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A6C6446C28142F59000CE875 /* FirebaseStorage */; };
 		A6C6446F281430BF000CE875 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6446E281430BF000CE875 /* AuthViewModel.swift */; };
+		A6D6213C28145A16005849FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D6213B28145A15005849FE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,8 +65,8 @@
 		A691C65F280A11DF00E246CE /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A691C662280A127A00E246CE /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
 		A6C644602814275B000CE875 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
-		A6C6446228142E2D000CE875 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6C6446E281430BF000CE875 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		A6D6213B28145A15005849FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "Twitter/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,8 +268,8 @@
 				A691C657280A119800E246CE /* Extensions */,
 				A691C649280A111100E246CE /* TwitterApp.swift */,
 				A691C64B280A111100E246CE /* ContentView.swift */,
+				A6D6213B28145A15005849FE /* GoogleService-Info.plist */,
 				A691C64D280A111400E246CE /* Assets.xcassets */,
-				A6C6446228142E2D000CE875 /* GoogleService-Info.plist */,
 				A691C64F280A111400E246CE /* Preview Content */,
 			);
 			path = Twitter;
@@ -434,7 +434,7 @@
 			files = (
 				A691C651280A111400E246CE /* Preview Assets.xcassets in Resources */,
 				A691C64E280A111400E246CE /* Assets.xcassets in Resources */,
-				A6C6446328142E2D000CE875 /* GoogleService-Info.plist in Resources */,
+				A6D6213C28145A16005849FE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
