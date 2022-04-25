@@ -20,6 +20,9 @@
 		A626CD1D2815868300D55999 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A626CD1C2815868300D55999 /* FirebaseDatabaseSwift-Beta */; };
 		A626CD1F2815868300D55999 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A626CD1E2815868300D55999 /* FirebaseFirestoreSwift-Beta */; };
 		A626CD212815868300D55999 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A626CD202815868300D55999 /* FirebaseStorageSwift-Beta */; };
+		A626CD2328158F0A00D55999 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626CD2228158F0A00D55999 /* UserService.swift */; };
+		A626CD252816DC7900D55999 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626CD242816DC7900D55999 /* User.swift */; };
+		A626CD282816E34D00D55999 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A626CD272816E34D00D55999 /* Kingfisher */; };
 		A63C5BE4280C07970003EFD0 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63C5BE3280C07970003EFD0 /* MainTabView.swift */; };
 		A63C5BEB280C091C0003EFD0 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63C5BEA280C091C0003EFD0 /* NotificationView.swift */; };
 		A63C5BF4280C0AA40003EFD0 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63C5BF3280C0AA40003EFD0 /* MessageView.swift */; };
@@ -52,6 +55,8 @@
 		A610A49D2811A96200334C2F /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		A610A49F2811B0A700334C2F /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		A626CD1728152E5800D55999 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		A626CD2228158F0A00D55999 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A626CD242816DC7900D55999 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A63C5BE3280C07970003EFD0 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		A63C5BEA280C091C0003EFD0 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		A63C5BF3280C0AA40003EFD0 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 				A626CD212815868300D55999 /* FirebaseStorageSwift-Beta in Frameworks */,
 				A626CD1D2815868300D55999 /* FirebaseDatabaseSwift-Beta in Frameworks */,
 				A626CD1B2815868300D55999 /* FirebaseAuth in Frameworks */,
+				A626CD282816E34D00D55999 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +307,7 @@
 		A691C658280A119F00E246CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A626CD242816DC7900D55999 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				A626CD1728152E5800D55999 /* ImageUploader.swift */,
+				A626CD2228158F0A00D55999 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -403,6 +411,7 @@
 				A626CD1C2815868300D55999 /* FirebaseDatabaseSwift-Beta */,
 				A626CD1E2815868300D55999 /* FirebaseFirestoreSwift-Beta */,
 				A626CD202815868300D55999 /* FirebaseStorageSwift-Beta */,
+				A626CD272816E34D00D55999 /* Kingfisher */,
 			);
 			productName = Twitter;
 			productReference = A691C646280A111100E246CE /* Twitter.app */;
@@ -434,6 +443,7 @@
 			mainGroup = A691C63D280A111100E246CE;
 			packageReferences = (
 				A626CD192815868300D55999 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A626CD262816E34C00D55999 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = A691C647280A111100E246CE /* Products */;
 			projectDirPath = "";
@@ -464,6 +474,7 @@
 			files = (
 				A691C64C280A111100E246CE /* ContentView.swift in Sources */,
 				A63C5BFC280C0BB20003EFD0 /* ExploreView.swift in Sources */,
+				A626CD2328158F0A00D55999 /* UserService.swift in Sources */,
 				A6D6214128146C7A005849FE /* ImagePicker.swift in Sources */,
 				A691C663280A127A00E246CE /* TweetRowView.swift in Sources */,
 				A63C5BFE280C64830003EFD0 /* TweetFilterViewModel.swift in Sources */,
@@ -481,6 +492,7 @@
 				A610A49A2811A7C000334C2F /* LoginView.swift in Sources */,
 				A610A49C2811A7D300334C2F /* RegistrationView.swift in Sources */,
 				A610A49328104C4300334C2F /* NewTweetView.swift in Sources */,
+				A626CD252816DC7900D55999 /* User.swift in Sources */,
 				A610A49E2811A96200334C2F /* RoundedShape.swift in Sources */,
 				A6C6446F281430BF000CE875 /* AuthViewModel.swift in Sources */,
 				A63C5C0E280DA3600003EFD0 /* UserStateView.swift in Sources */,
@@ -696,6 +708,14 @@
 				minimumVersion = 8.9.0;
 			};
 		};
+		A626CD262816E34C00D55999 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -718,6 +738,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A626CD192815868300D55999 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageSwift-Beta";
+		};
+		A626CD272816E34D00D55999 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A626CD262816E34C00D55999 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
