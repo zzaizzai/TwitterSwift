@@ -9,6 +9,21 @@ import Foundation
 
 class ExploreViewModel: ObservableObject {
     @Published var users = [User]()
+    @Published var searchText = ""
+    
+    var searchableUsers: [User] {
+        if searchText.isEmpty {
+            return users
+        } else {
+            let lowercasedQueary = searchText.lowercased()
+            
+            return users.filter({
+                $0.username.contains(lowercasedQueary) ||
+                $0.fullname.lowercased().contains(lowercasedQueary)
+            })
+        }
+    }
+    
     let service = UserService()
     
     init() {
@@ -18,8 +33,6 @@ class ExploreViewModel: ObservableObject {
     func fetchUsers() {
         service.fetchUsers { users in
             self.users = users
-            
-            print("DEBUG: Users \(users)")
         }
     }
 }

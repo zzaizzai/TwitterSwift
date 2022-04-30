@@ -27,6 +27,7 @@ struct ProfilePhotoSelectorView: View {
                         .modifier(ProfileImageModifier())
                 } else {
                     Image("photo.plus")
+                        .resizable()
                         .renderingMode(.template)
                         .modifier(ProfileImageModifier())
                 }
