@@ -30,8 +30,8 @@ struct ExploreView: View {
                 }
             }
         }
-        .navigationTitle("Explore")
-        .navigationBarTitleDisplayMode(.inline)
+//        .navigationTitle("Explore")
+//        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

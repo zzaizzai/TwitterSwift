@@ -9,7 +9,6 @@ import Foundation
 
 class UploadTweetViewModel: ObservableObject {
     @Published var didUploadTweet = false
-    
     let service = TweetService()
     
     func uploadTweet(withCaption caption: String) {
@@ -23,5 +22,7 @@ class UploadTweetViewModel: ObservableObject {
             }
         }
     }
+
+    
     
 }

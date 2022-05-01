@@ -36,8 +36,6 @@ struct NewTweetView: View {
                         .foregroundColor(.white)
                         .clipShape(Capsule())
                 }
-
-                
             }
             .padding()
             
