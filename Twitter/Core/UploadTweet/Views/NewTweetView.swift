@@ -36,8 +36,6 @@ struct NewTweetView: View {
                         .foregroundColor(.white)
                         .clipShape(Capsule())
                 }
-
-                
             }
             .padding()
             
@@ -66,5 +64,6 @@ struct NewTweetView: View {
 struct NewTweetView_Previews: PreviewProvider {
     static var previews: some View {
         NewTweetView()
+            .environmentObject(AuthViewModel())
     }
 }

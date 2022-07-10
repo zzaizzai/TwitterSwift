@@ -69,5 +69,6 @@ struct SideMenuView: View {
 struct SideMenuRowView_Previews: PreviewProvider {
     static var previews: some View {
         SideMenuView()
+            .environmentObject(AuthViewModel())
     }
 }

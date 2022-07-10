@@ -15,10 +15,16 @@ struct MainTabView: View {
             FeedView()
                 .onTapGesture {
                     self.selectedIndex = 0
+                    
                 }
                 .tabItem{
                     Image(systemName: "house")
+                    
                 }.tag(0)
+                .navigationBarTitle( "Home")
+                .navigationBarTitleDisplayMode(.inline)
+
+                
             
             ExploreView()
                 .onTapGesture {
@@ -27,6 +33,9 @@ struct MainTabView: View {
                 .tabItem{
                     Image(systemName: "magnifyingglass")
                 }.tag(1)
+                .navigationBarTitle( "Explore")
+                .navigationBarTitleDisplayMode(.inline)
+
             
             NotificationView()
                 .onTapGesture {
@@ -35,6 +44,9 @@ struct MainTabView: View {
                 .tabItem{
                     Image(systemName: "bell")
                 }.tag(2)
+                .navigationBarTitle( "Notification")
+                .navigationBarTitleDisplayMode(.inline)
+
             
             MessageView()
                 .onTapGesture {
@@ -43,6 +55,9 @@ struct MainTabView: View {
                 .tabItem{
                     Image(systemName: "envelope")
                 }.tag(3)
+                .navigationBarTitle( "Message")
+                .navigationBarTitleDisplayMode(.inline)
+
         }
     }
 }

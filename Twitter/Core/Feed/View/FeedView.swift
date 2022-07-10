@@ -41,7 +41,8 @@ struct FeedView: View {
             }
 
         }
-        .navigationBarTitleDisplayMode(.inline)
+//        .navigationTitle("Home")
+//        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

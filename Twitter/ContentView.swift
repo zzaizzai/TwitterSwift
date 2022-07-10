@@ -29,6 +29,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
             ContentView()
+                .environmentObject(AuthViewModel())
         }
     }
 }
@@ -57,8 +58,8 @@ extension ContentView {
                 .offset(x: showMenu ? 0: -300, y: 0)
                 .background(showMenu ? Color.white : Color.clear)
         }
-        .navigationTitle("Home")
-        .navigationBarTitleDisplayMode(.inline)
+//        .navigationTitle("Home")
+//        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 if let user = viewModel.currentUser {
