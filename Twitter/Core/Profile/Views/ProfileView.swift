@@ -31,7 +31,6 @@ struct ProfileView: View {
             
             tweetView
             
-
             Spacer()
         }
         .navigationBarHidden(true)
@@ -115,7 +114,7 @@ extension ProfileView {
                 .font(.subheadline)
                 .foregroundColor(.gray)
             
-            Text("Your moms vaf")
+            Text("introduce yourself")
                 .font(.subheadline)
                 .padding(.vertical)
             

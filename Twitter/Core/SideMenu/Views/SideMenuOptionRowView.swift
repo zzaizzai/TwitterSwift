@@ -30,6 +30,15 @@ struct SideMenuOptionRowView: View {
 
 struct SideMenuOptionRowView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuOptionRowView(viewModel: .profile)
+        VStack{
+            Spacer()
+            SideMenuOptionRowView(viewModel: .profile)
+            SideMenuOptionRowView(viewModel: .lists)
+            SideMenuOptionRowView(viewModel: .bookmarks)
+            SideMenuOptionRowView(viewModel: .logout)
+            Spacer()
+            
+        }
+
     }
 }
